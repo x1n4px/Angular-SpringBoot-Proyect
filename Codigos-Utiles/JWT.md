@@ -13,7 +13,7 @@
 
 ## Crear aplicación Spring Boot
 Accedemos a la web de [Spring Initializr](https://start.spring.io/) y generamos un proyecto Maven con Java y Spring Boot 2.1.1, rellenamos el group, el artifact de nuestro proyecto (en este caso "es.softtek" y "jwt-demo") y añadimos dependencias para Web:
-![JPW]()
+![JPW](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/Codigos-Utiles/Imagenes-Aux/jwp.png?raw=true)
 
 ## Implementando nuestro API
 ```
