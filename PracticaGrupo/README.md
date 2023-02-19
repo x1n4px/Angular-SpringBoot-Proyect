@@ -4,3 +4,4 @@
 
 
 
+Las relaciones hacia ASISTENCIAS no están confirmadas, ya que hay que usar @Embeddable, aunque en el pdf de clase, hay otra opción que marca como preferida, que sería crear una nueva entidad y pasarla como variable con @EmbeddedId
