@@ -1,5 +1,7 @@
 # Trabajo-Grupo-SII-Grupo-12-FIJIS
 
+[Comentarios sobre la implementación del código](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/PracticaGrupo/README.md)
+
 ## Microservicios a implementar:
 1. Gestión de usuarios de la aplicación
 - [Token autenticación](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/Codigos-Utiles/JWT.md)
