@@ -1,4 +1,5 @@
 # Grupo 12 FIJIS
+![fijis](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/Codigos-Utiles/Imagenes-Aux/islas-fiji.jpg?raw=true)
 
 [Comentarios sobre la implementación del código](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/PracticaGrupo/README.md)
 
