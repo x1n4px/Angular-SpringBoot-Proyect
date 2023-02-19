@@ -1,4 +1,8 @@
-# Trabajo-Grupo-SII
+# Trabajo-Grupo-SII-Grupo-12-FIJIS
+
+## Microservicios a implementar:
+1. Gestión de usuarios de la aplicación
+2. Gestión de horario y las materias
 
 ## Microservicios
 1. Gestión de las sedes y aulas -> CRUD de sedes, responsables de sedes, aulas, vigilantes de ulas y responsables de aulas. Cada año se podría usar distintas sedes. Este servicio permitirá asignar vigilantes y responsables a aulas y responsables de sedes a sedes.
@@ -18,3 +22,5 @@
 5. Corrector -> Nombre, apellidos, correo electrónico, teléfono móvil (opcional), materia en que es especialista, número máximo de exámenes a corregir
 6. Vicerrectorado -> Correo electrónico
 7. Sede -> Nombre, dirección, coordenadas geográficas
+
+
