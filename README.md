@@ -2,6 +2,9 @@
 
 [Comentarios sobre la implementación del código](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/PracticaGrupo/README.md)
 
+## UTILES
+[Implementación del relaciones](https://www.adictosaltrabajo.com/2020/04/02/hibernate-onetoone-onetomany-manytoone-y-manytomany/)
+
 ## Microservicios a implementar:
 1. Gestión de usuarios de la aplicación
 - [Token autenticación](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/Codigos-Utiles/JWT.md)
