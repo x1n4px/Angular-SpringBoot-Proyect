@@ -1,4 +1,4 @@
-# Trabajo-Grupo-SII-Grupo-12-FIJIS
+# Grupo 12 FIJIS
 
 [Comentarios sobre la implementación del código](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/PracticaGrupo/README.md)
 
