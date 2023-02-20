@@ -2,8 +2,15 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="p2-jpa">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<class>es.uma.informatica.sii.jpa.proyectos.Proyecto</class>
-		<class>es.uma.informatica.sii.jpa.proyectos.Tarea</class>
+		<class>es.uma.informatica.sii.jpa.proyectos.ANE</class>
+		<class>es.uma.informatica.sii.jpa.proyectos.ASISTENCIA</class>
+		<class>es.uma.informatica.sii.jpa.proyectos.AULA</class>
+		<class>es.uma.informatica.sii.jpa.proyectos.CENTRO</class>
+		<class>es.uma.informatica.sii.jpa.proyectos.ESTUDIANTE</class>
+		<class>es.uma.informatica.sii.jpa.proyectos.EXAMEN</class>
+		<class>es.uma.informatica.sii.jpa.proyectos.MATERIA</class>
+		<class>es.uma.informatica.sii.jpa.proyectos.SEDE</class>
+		<class>es.uma.informatica.sii.jpa.proyectos.VOCAL</class>
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:test"/>
 			<property name="javax.persistence.jdbc.user" value=""/>

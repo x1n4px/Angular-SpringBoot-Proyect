@@ -1,9 +1,10 @@
 package es.uma.informatica.sii.jpa.proyectos;
 
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import java.util.Objects;
 
-@Entity
+@Embeddable
 public class ANE extends ESTUDIANTE{
 
     private String Descabezar;

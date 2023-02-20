@@ -17,17 +17,18 @@ public class MATERIA {
     //R M-M ESTUDIANTE-MATERIA
     @ManyToMany(mappedBy = "materia")
     private Set<ESTUDIANTE> estudiante;
-
+/*
     //R U-M (ENT DEBIL) MATERIA_ASISTENCIA
     @OneToMany(mappedBy = "materia")
     private List<ASISTENCIA> asistencias;
-
+*/
     //R M-M EXAMEN-MATERIA
     @ManyToMany(mappedBy = "materias")
     private List<EXAMEN> examenes = new ArrayList<>();
 
 
-
+    @Embedded
+    private ASISTENCIA asistencia;
 
 
 
@@ -46,9 +47,7 @@ public class MATERIA {
         return estudiante;
     }
 
-    public List<ASISTENCIA> getAsistencias() {
-        return asistencias;
-    }
+
 
     public List<EXAMEN> getExamenes() {
         return examenes;
@@ -66,12 +65,18 @@ public class MATERIA {
         this.estudiante = estudiante;
     }
 
-    public void setAsistencias(List<ASISTENCIA> asistencias) {
-        this.asistencias = asistencias;
-    }
+
 
     public void setExamenes(List<EXAMEN> examenes) {
         this.examenes = examenes;
+    }
+
+    public ASISTENCIA getAsistencia() {
+        return asistencia;
+    }
+
+    public void setAsistencia(ASISTENCIA asistencia) {
+        this.asistencia = asistencia;
     }
 
     @Override
@@ -79,11 +84,11 @@ public class MATERIA {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MATERIA materia = (MATERIA) o;
-        return Objects.equals(Codigo, materia.Codigo) && Objects.equals(Nombre, materia.Nombre) && Objects.equals(estudiante, materia.estudiante) && Objects.equals(asistencias, materia.asistencias) && Objects.equals(examenes, materia.examenes);
+        return Objects.equals(Codigo, materia.Codigo) && Objects.equals(Nombre, materia.Nombre) && Objects.equals(estudiante, materia.estudiante) && Objects.equals(examenes, materia.examenes) && Objects.equals(asistencia, materia.asistencia);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(Codigo, Nombre, estudiante, asistencias, examenes);
+        return Objects.hash(Codigo, Nombre, estudiante, examenes, asistencia);
     }
 }

@@ -31,14 +31,17 @@ public class ESTUDIANTE {
             inverseJoinColumns = {@JoinColumn(name = "materia-id")}
     )
     private Set<MATERIA> materia;
-
+/*
     //R U-M (ENT DEBIL) ESTUDIANTE_ASISTENCIA
     @OneToMany(mappedBy = "estudiante")
     private List<ASISTENCIA> asistencias;
+*/
 
+    @Embedded
+    private ANE ane;
 
-
-
+    @Embedded
+    private ASISTENCIA asistencia;
 
 
 
@@ -99,12 +102,12 @@ public class ESTUDIANTE {
         this.materia = materia;
     }
 
-    public List<ASISTENCIA> getAsistencias() {
-        return asistencias;
+    public ASISTENCIA getAsistencia() {
+        return asistencia;
     }
 
-    public void setAsistencias(List<ASISTENCIA> asistencias) {
-        this.asistencias = asistencias;
+    public void setAsistencia(ASISTENCIA asistencia) {
+        this.asistencia = asistencia;
     }
 
     @Override
@@ -112,11 +115,11 @@ public class ESTUDIANTE {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ESTUDIANTE that = (ESTUDIANTE) o;
-        return Objects.equals(DNI, that.DNI) && Objects.equals(nombre, that.nombre) && Objects.equals(apellidos, that.apellidos) && Objects.equals(Telefono, that.Telefono) && Objects.equals(Correoe, that.Correoe) && Objects.equals(centro, that.centro) && Objects.equals(materia, that.materia) && Objects.equals(asistencias, that.asistencias);
+        return DNI.equals(that.DNI) && nombre.equals(that.nombre) && apellidos.equals(that.apellidos) && Telefono.equals(that.Telefono) && Correoe.equals(that.Correoe) && centro.equals(that.centro) && materia.equals(that.materia) && ane.equals(that.ane) && asistencia.equals(that.asistencia);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(DNI, nombre, apellidos, Telefono, Correoe, centro, materia, asistencias);
+        return Objects.hash(DNI, nombre, apellidos, Telefono, Correoe, centro, materia, ane, asistencia);
     }
 }

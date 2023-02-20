@@ -24,11 +24,13 @@ public class EXAMEN {
     @ManyToOne
     @JoinColumn(name = "vocal_id")
     private VOCAL vocalResponsable;
-
+/*
     //R U-M (ENT DEBIL) EXAMEN_ASISTENCIA
     @OneToMany(mappedBy = "examen")
     private List<ASISTENCIA> asistencia;
-
+*/
+    @Embedded
+    private ASISTENCIA asistencia;
 
     //R M-M EXAMEN-MATERIA
     @ManyToMany
@@ -71,11 +73,11 @@ public class EXAMEN {
         this.vocalResponsable = vocalResponsable;
     }
 
-    public List<ASISTENCIA> getAsistencia() {
+    public ASISTENCIA getAsistencia() {
         return asistencia;
     }
 
-    public void setAsistencia(List<ASISTENCIA> asistencia) {
+    public void setAsistencia(ASISTENCIA asistencia) {
         this.asistencia = asistencia;
     }
 
@@ -89,6 +91,7 @@ public class EXAMEN {
 
     @Override
     public boolean equals(Object o) {
+
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         EXAMEN examen = (EXAMEN) o;
