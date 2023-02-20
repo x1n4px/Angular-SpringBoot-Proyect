@@ -5,6 +5,7 @@
 
 ## UTILES
 [Implementación del relaciones](https://www.adictosaltrabajo.com/2020/04/02/hibernate-onetoone-onetomany-manytoone-y-manytomany/)
+[JPA @Embedded](https://www.arquitecturajava.com/ejemplo-jpa-embedded/)
 
 ## Microservicios a implementar:
 1. Gestión de usuarios de la aplicación
