@@ -12,3 +12,6 @@ Y ANE que es una entidad que hereda de estudiante, se ha creado como una clase n
 ```
 
 También faltaría ver si hay que añadir @Table al inicio de cada clase
+
+
+
