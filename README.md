@@ -2,6 +2,8 @@
 ![fijis](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/Codigos-Utiles/Imagenes-Aux/islas-fiji.jpg?raw=true)
 
 [Comentarios sobre la implementación del código](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/PracticaGrupo/README.md)
+[Modelo Logico](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/Codigos-Utiles/Imagenes-Aux/ER%20PEVAU.PNG?raw=true)
+[Modelo Relacional](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/Codigos-Utiles/Imagenes-Aux/Relational_1.png?raw=true)
 
 ## UTILES
 [Implementación del relaciones](https://www.adictosaltrabajo.com/2020/04/02/hibernate-onetoone-onetomany-manytoone-y-manytomany/)
