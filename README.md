@@ -10,10 +10,19 @@
 [JPA @Embedded](https://www.arquitecturajava.com/ejemplo-jpa-embedded/)
 
 ## Microservicios a implementar:
-1. Gestión de usuarios de la aplicación
+### **1. Gestión de usuarios de la aplicación**
 - [Token autenticación](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/Codigos-Utiles/JWT.md)
 - [Modificación datos usuario](https://github.com/x1n4px/Desarrollo-de-servicios-telematicos/tree/main/practicas/practica3DST/practica3/src/main/java/csccorner)
-2. Gestión de horario y las materias
+Modelo lógico:
+- Usuario(nombreUsuario, Contraseña, eMail, Nombre, Apellidos, Telefono, direccion)
+
+### **2. Gestión de horario y las materias**
+Modelo lógico:
+- Materia(Codigo PK, nombre (not null))
+- Examen(FechayHora PK)
+- Aula(Codigo PK, Capcidad (not null), Capacidad_Examen (Not null), Decripcion)
+- Sede(Codigo PK, Nombre (not null), Tipo)
+- Centro(Codigo PK, Nombre (not null), Direccion, Poblacion)
 
 ## Microservicios
 1. Gestión de las sedes y aulas -> CRUD de sedes, responsables de sedes, aulas, vigilantes de ulas y responsables de aulas. Cada año se podría usar distintas sedes. Este servicio permitirá asignar vigilantes y responsables a aulas y responsables de sedes a sedes.
