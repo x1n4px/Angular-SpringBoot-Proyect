@@ -13,6 +13,7 @@
 ### **1. Gestión de usuarios de la aplicación**
 - [Token autenticación](https://github.com/x1n4px/Trabajo-Grupo-SII/blob/main/Codigos-Utiles/JWT.md)
 - [Modificación datos usuario](https://github.com/x1n4px/Desarrollo-de-servicios-telematicos/tree/main/practicas/practica3DST/practica3/src/main/java/csccorner)
+
 Modelo lógico:
 - Usuario(nombreUsuario, Contraseña, eMail, Nombre, Apellidos, Telefono, direccion)
 
