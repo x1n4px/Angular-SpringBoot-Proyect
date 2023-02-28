@@ -1,0 +1,17 @@
+<div class="login">
+
+    <form class="custom-form" #loginform="ngForm" (ngSubmit)="loginUser()">
+        <small class="txt-danger">{{msg}}</small>
+        <h1>Inicio de sesión</h1>
+        <input type="email" [(ngModel)]="user.emailId" name="email" placeholder="Email" required="required" />
+        <input type="password" [(ngModel)]="user.password" name="password" placeholder="Contraseña" required="required" />
+
+        
+        <button [disabled]="loginform.form.invalid" type="submit" class="btn btn-info">Iniciar sesión</button>
+        <div class="small">
+            <a class="registernew" [routerLink]="['/registration']">Nuevo Usuario ? Registrate aqui</a>
+        </div>
+    </form>
+    <!--<small class="float-right" (click)="gotoregistration()">New user ? register here</small>-->
+
+</div>

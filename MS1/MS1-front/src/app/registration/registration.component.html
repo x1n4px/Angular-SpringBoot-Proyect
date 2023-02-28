@@ -1,0 +1,29 @@
+<div class="container">
+
+    <form class="custom-form"(ngSubmit)="registerUser()">
+      <small class="txt-danger">{{msg}}</small>
+      <h1>Registrar </h1>
+      <div class="form-group">
+        
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" placeholder="Introduce Email" name="email" [(ngModel)]="user.emailId" >
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Introduce Nombre de usuario" name="username" [(ngModel)]="user.userName" >
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Introduce Contraseña" name="password" [(ngModel)]="user.password" >
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Confirma Contraseña" name="cpassword" (ngModel)="user.password" >
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Registrar</button>
+      <div class="small">
+        <a class="login" [routerLink]="['/login']">Tienes cuenta ? Inicia sesión</a>
+      </div>
+    </form>
+  
+  </div>
+  
