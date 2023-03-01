@@ -23,8 +23,10 @@ export class LoginComponent implements OnInit {
     console.log(this.user);
     this._service.loginUserFromRemote(this.user).subscribe(
       data => {
-        console.log("response recieved"),
-        this._route.navigate(['/loginsuccess'])
+        console.log("response recieved");
+        // Almacenamos la información del usuario en la sesión actual
+        sessionStorage.setItem('currentUser', JSON.stringify(data));
+        this._route.navigate(['/loginsuccess']);
       },
       error => {
         console.log("exception ocurred");
@@ -32,6 +34,7 @@ export class LoginComponent implements OnInit {
       }
     )
   }
+
 
   gotoregistration(){
     this._route.navigate(['/registration'])

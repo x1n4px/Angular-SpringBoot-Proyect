@@ -1,24 +1,26 @@
-<html>
-
-<body>
-    <nav>
-        <div class="logo">
-            <h1 class="title-name">Perfil</h1>
-        </div>
-        <ul class="nav-links">
-            <li> <a class="main-menu" [routerLink]="['/loginsuccess']">Volver al Menú</a>
-            </li>
-        </ul>
-    </nav>
 
 
-    <div class="date">
-        <p>Email: {{user.emailId}}</p>
-        <p>Username: {{user.userName}}</p>
-        <p>Name: </p>
-        <p>Surname: </p>
 
-    </div>
-</body>
 
-</html>
+<!-- Agregar las clases "custom-form" y "date" en los contenedores de los datos de usuario -->
+<div class="profile">
+  <form class="custom-form" >
+
+    <h1>Profile:</h1>
+    <p><strong style="font-weight: bold;">Email:</strong> {{currentUser.emailId}}</p>
+
+  <p><strong style="font-weight: bold;">Email:</strong> {{currentUser.emailId}}</p>
+  <p><strong style="font-weight: bold;">Username:</strong> {{currentUser.userName}}</p>
+  <p><strong style="font-weight: bold;">Name:</strong> {{currentUser.name}}</p>
+  <p><strong style="font-weight: bold;">Surname:</strong> {{currentUser.surname}}</p>
+  <p><strong style="font-weight: bold;">Address:</strong> {{currentUser.address}}</p>
+  <p><strong style="font-weight: bold;">Telefone:</strong> {{currentUser.telefone}}</p>
+
+  <div class = "small">
+<a class="main-menu-bt" [routerLink]="['/loginsuccess']">Volver al Menú</a>
+<button class ="change-password" (click)="changePassword()">Cambiar Contraseña</button>
+
+  </div>
+</form>
+</div>
+

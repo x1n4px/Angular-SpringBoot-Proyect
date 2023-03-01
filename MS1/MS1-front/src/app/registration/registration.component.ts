@@ -18,7 +18,7 @@ export class RegistrationComponent {
 
   ngOnInit() {
     console.log(this.user);
-  }
+  } 
 
   registerUser() {
     console.log(this.user);
