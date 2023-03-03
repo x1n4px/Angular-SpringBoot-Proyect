@@ -82,14 +82,14 @@ h1 {
   text-align: center;
 }
 
-change-password{
+.change-password-bt{
   text-transform: uppercase;
   letter-spacing: 0.15em;
   border: none;
   font-size: 0.875rem;
   color: #ffffff;
   font-weight: bold;
-  background-color: #2b3b2f;
+  background-color: #242925;
   /* Cambiar el color de fondo según prefieras */
   width: 100%;
   display: block;
@@ -101,3 +101,4 @@ change-password{
   /* Agregar un margen superior para separarlo del botón anterior */
   text-align: center;
 }
+

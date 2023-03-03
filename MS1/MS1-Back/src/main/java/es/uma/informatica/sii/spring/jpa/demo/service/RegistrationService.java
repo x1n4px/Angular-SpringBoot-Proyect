@@ -26,6 +26,10 @@ public class RegistrationService {
         return repo.findByEmailIdAndPassword(email, password);
     }
 
+    public User fetchUserByEmail(String Email){
+        return repo.findByEmailId(Email);
+    }
+
     @GetMapping("/usuarios/{id}")
     public ResponseEntity<User> getUserById(@PathVariable Long id){
         User usuario = repo.findById(id)

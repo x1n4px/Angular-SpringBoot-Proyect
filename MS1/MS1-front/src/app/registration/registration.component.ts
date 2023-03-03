@@ -18,10 +18,9 @@ export class RegistrationComponent {
 
   ngOnInit() {
     console.log(this.user);
-  } 
+  }
 
   registerUser() {
-    console.log(this.user);
     this._service.registerUserFromRemote(this.user).subscribe(
       data => {
         alert("Successfully User is register?");

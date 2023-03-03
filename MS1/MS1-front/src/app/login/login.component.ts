@@ -18,9 +18,30 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
 
   }
+  /*
+  CIFRAR LA CLAVE ANTES DE ENVIARLA
+  import * as bcrypt from 'bcryptjs';
+
+  // ...
+
+  // Obtener la contraseña del formulario de inicio de sesión
+  let password = this.loginForm.get('password').value;
+
+  // Cifrar la contraseña
+  let hashedPassword = bcrypt.hashSync(password, 10);
+
+  // Enviar la contraseña cifrada al servidor
+  this.authService.loginUser({ emailId: email, password: hashedPassword })
+      .subscribe(response => {
+          // Manejar la respuesta del servidor
+      });
+
+*/
+
+
+
 
   loginUser() {
-    console.log(this.user);
     this._service.loginUserFromRemote(this.user).subscribe(
       data => {
         console.log("response recieved");
@@ -36,7 +57,7 @@ export class LoginComponent implements OnInit {
   }
 
 
-  gotoregistration(){
+  gotoregistration() {
     this._route.navigate(['/registration'])
 
   }

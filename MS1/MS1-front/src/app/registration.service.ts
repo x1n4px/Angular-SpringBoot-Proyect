@@ -20,15 +20,24 @@ export class RegistrationService {
 
   registerUserFromRemote(user: User): Observable<Object> {
     //Maybe its 8090 instead of 8080
-    console.log(user);
+
     return this._http.post("http://localhost:8080/api/v1/register", user);
   }
 
   getUserByEmail(emailid:string):Observable<User>{
     return this._http.get<User>(`${this.getEmailURL}/${emailid}`);
   }
-  
+
   getUserDetails() {
     return this._http.get("http://localhost:8080/api/v1/profile");
   }
+
+  changePasswordRemote(user:User):Observable<Object>{
+    return this._http.post("http://localhost:8080/api/v1/changePass ", user);
+
+  }
+
+
+
+
 }

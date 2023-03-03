@@ -9,7 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
 import { ProfileComponent } from './profile/profile.component';
-import { ChangePasswordComponent } from './change-password/change-password.component';
+import { ChangePasswordAfterLoginComponent } from './change-password-after-login/change-password-after-login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     RegistrationComponent,
     LoginsuccessComponent,
     ProfileComponent,
-    ChangePasswordComponent
+    ChangePasswordAfterLoginComponent
   ],
   imports: [
     BrowserModule,
