@@ -53,10 +53,27 @@ public class RegistrationController {
     }
 
 
-    @PostMapping("/changePass")
-    public ResponseEntity<User> changePassword(@RequestBody User user) {
-        String oldPass = user.getPassword();
+     @PostMapping("/changePass")
+    public ResponseEntity<?> changePassword(@RequestBody Map<String, String> request) {
+        String email = request.get("email");
+        String currentPassword = request.get("currentPassword");
+        String newPassword = request.get("newPassword");
 
+        User user = repo.findByEmailId(email);
+        if (user == null) {
+            return ResponseEntity.badRequest().body("User not found");
+        }
+
+        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        if (!passwordEncoder.matches(currentPassword, user.getPassword())) {
+            return ResponseEntity.badRequest().body("Incorrect current password");
+        }
+
+        String encodedNewPassword = passwordEncoder.encode(newPassword);
+        user.setPassword(encodedNewPassword);
+        repo.save(user);
+
+        return ResponseEntity.ok("Password changed successfully");
     }
 /*
     @GetMapping("/profile")
